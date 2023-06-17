@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+$font:'DM Sans',
+sans-serif;
+$primary:#1866EF;
+
+$secondary: #2AC38F;
+
+body {
+    font-family: $font;
+    background: #fff;
+    color: #222222;
+
+    .btn {
+        background: rgb(24, 102, 239);
+        background: linear-gradient(90deg, rgba(24, 102, 239, 1) 0%, rgba(42, 195, 143, 1) 70%);
+        color: #fff;
+        padding: 13px 40px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: capitalize;
+        display: inline-block;
+        border-radius: 25px;
+        transition: 2s ease;
+
+        &:hover {
+            background: linear-gradient(-90deg, rgba(24, 102, 239, 1) 0%, rgba(42, 195, 143, 1) 70%);
+        }
+    }
+
+
+
+
+    #siteHdr {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        padding: 20px 0;
+        transition: .2s ease;
+
+        a.logo {
+            display: block;
+            width: 220px;
+        }
+
+        .navLinks {
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: #222222;
+        }
+    }
+
+
+
+    #hero {
+        min-height: 800px;
+        background: linear-gradient(297deg, rgba(255, 255, 255, 0.700717787114846) 0%, rgba(255, 255, 255, 0.700717787114846) 70%), url("../img/apple-orchard.jpg");
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: $primary;
+            font-size: 55px;
+            line-height: 1.1;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 17px;
+            color: #222222;
+            margin-top: 20px;
+        }
+
+        .shape {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            object-fit: cover;
+            // height: 300px;
+        }
+    }
+
+    .sectitle {
+        font-size: 40px;
+        text-transform: capitalize;
+        font-weight: 700;
+        background: linear-gradient(90deg, rgba(24, 102, 239, 1) 0%, rgba(42, 195, 143, 1) 70%);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+
+    #aboutUs,
+    #solution {
+        .lft {
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+            img {
+                border-radius: 20px;
+                box-shadow: 20px 20px 0px $secondary;
+                display: block;
+            }
+
+        }
+
+        .rght {
+            .subTtl {
+                color: $primary;
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin-top: 20px;
+            }
+
+            .teamCrd {
+                box-shadow: 1px 1px 10px rgb(235, 235, 235);
+                border-radius: 10px;
+
+                img {
+                    max-width: 100px;
+                    margin: 0 auto;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                p {
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.4;
+                margin-top: 10px;
+
+                span {
+                    color: $primary;
+                    font-size: 50px;
+                    font-weight: 700;
+                    display: block;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    #team {
+        .subTtl {
+            color: $primary;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .teamCrd {
+            box-shadow: 1px 1px 10px rgb(235, 235, 235);
+            border-radius: 10px;
+
+            img {
+                max-width: 100px;
+                height: 100px;
+                object-fit: cover;
+                width: 100px;
+                margin: 0 auto;
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            p {
+                color: $primary;
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+
+    #problem {
+        .icon {
+            background: linear-gradient(90deg, rgba(24, 102, 239, 1) 0%, rgba(42, 195, 143, 1) 70%);
+            padding: 15px;
+            width: 80px;
+            border-radius: 100%;
+            box-shadow: 1px 1px 10px rgb(141, 141, 141);
+            margin: 0 auto;
+
+        }
+
+        .crd {
+            cursor: pointer;
+
+            &:hover {
+                .txt {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .ttl {
+            font-weight: 600;
+            font-size: 22px;
+            margin-top: 20px;
+            text-align: center;
+            text-transform: capitalize;
+            cursor: pointer;
+
+
+        }
+
+        .txt {
+            transition: .3s ease;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 5px;
+            opacity: 0;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+    .navLinks {
+        background: rgb(255, 255, 255);
+        position: absolute;
+        height: auto;
+        z-index: 9999;
+        top: 80px;
+        right: -400px;
+        width: 100%;
+        padding: 40px 20px;
+        transition: .2s ease;
+
+        &.active {
+            right: 0;
+        }
+
+        a {
+            font-size: 20px !important;
+        }
+    }
+
+    body #siteHdr a.logo {
+        display: block;
+        width: 160px;
+    }
+
+    body #hero h3 {
+        color: #1866EF;
+        font-size: 35px;
+
+    }
+
+    body #hero {
+        min-height: 614px;
+    }
+
+    body .sectitle {
+        font-size: 32px;
+    }
+
+    body #aboutUs ul li,
+    body #solution ul li {
+        font-size: 17px;
+    }
+
+    body #team .teamCrd img {
+        width: 75px;
+        height: 75px;
+    }
+
+    body #team .teamCrd h4 {
+        font-size: 15px;
+    }
+
+    body #team .teamCrd p {
+        font-size: 11px;
+    }
+}

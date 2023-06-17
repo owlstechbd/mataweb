@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    .navLinks {
+      background: #fff;
+      position: absolute;
+      height: auto;
+      z-index: 9999;
+      top: 80px;
+      right: -400px;
+      width: 100%;
+      padding: 40px 20px;
+      -webkit-transition: 0.2s ease;
+      transition: 0.2s ease;
+    }
+    #background-video{
+        height: 60vh;
+    }
+    .text {
+        padding: 30px 11px;
+        width: 100%;
+        top: 50%;
+    }
+    .text h1 {
+        font-size: 27px;
+        width: 95%;
+    }
+   
+    .navLinks.active {
+      right: 0;
+    }
+  
+    .navLinks a {
+      font-size: 20px !important;
+    }
+  
+    body #siteHdr a.logo {
+      display: block;
+      width: 160px;
+  
+    }
+  
+    body #hero h3 {
+      color: #1866EF;
+      font-size: 35px;
+    }
+  
+    body #hero {
+      min-height: 614px;
+    }
+  
+    body .sectitle {
+      font-size: 32px;
+    }
+  
+    body #aboutUs ul li,
+    body #solution ul li {
+      font-size: 17px;
+    }
+  
+    body #team .teamCrd img {
+      width: 75px;
+      height: 75px;
+    }
+  
+    body #team .teamCrd h4 {
+      font-size: 15px;
+    }
+  
+    body #team .teamCrd p {
+      font-size: 11px;
+    }
+    .why-mata-box{
+     flex-wrap: wrap;
+      
+    }
+    .mata-box-iteam{
+      width: 49%;
+      margin-bottom:70px;
+      padding: 20px 10px;
+    }
+    .section-title h2{
+      font-size: 30px;
+    }
+    .mata-box-iteam h2{
+      font-size: 20px;
+    }
+    #problem{
+      padding: 50px 0;
+    }
+    .section-padding{
+      padding: 50px 0;
+    }
+    #technology{
+      flex-direction: column;
+    }
+    .technology-left{
+      width: 100%;
+      padding: 40px 20px;
+    }
+    .technology-right{
+      width: 100%;
+      height: 50vh;
+      background-position-x:-450px;
+      background-size: cover;
+    }
+    body .sectitle{
+      margin-top: 30px;
+    }
+    #aboutUs{
+      padding: 50px 0;
+    }
+    #team{
+      padding: 50px 0 0;
+    }
+    .footer{
+      padding: 40px 0;
+    }
+    .footer ul{
+      flex-direction: column;
+    }
+    .famil-story{
+      flex-direction: column;
+    }
+    .story-content{
+      width: 100%;
+    }
+    .story-img{
+      width: 100%;
+      height: 40vh;
+    }
+    .story-revers{
+      flex-direction: column-reverse;
+    }
+  }
+  
